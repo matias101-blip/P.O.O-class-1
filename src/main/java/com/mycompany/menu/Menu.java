@@ -5,6 +5,8 @@
 
 package com.mycompany.menu;
 import javax.swing.*;
+import java.lang.Math;
+import java.io.*;
 
 
 
@@ -28,9 +30,41 @@ public class Menu {
 	    result = n1 - n2;
 	    JOptionPane.showMessageDialog(null, "El resultado de la resta es: " + result);
     }
+
+    public static void multiplicar(){
+	    int n1, n2, result;
+	    JOptionPane.showMessageDialog(null, "Ingrese los valores para realizar la restar: ");
+	    n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 1: "));
+	    n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 2: "));
+	    result = n1 * n2;
+	    JOptionPane.showMessageDialog(null, "El resultado de la Multiplicacion es: " + result);
+    }
  
-    
-    
+   
+    public static void dividir(){
+	    double n1, n2, result;
+	    JOptionPane.showMessageDialog(null, "Ingrese los valores para realizar la restar: ");
+	    n1 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el numero 1: "));
+	    n2 = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el numero 2: "));
+	    result = n1 / n2;
+	    JOptionPane.showMessageDialog(null, "El resultado de la Division es: " + result);
+    }
+
+
+    public static void modulo(){
+	    int n1, n2, mod;
+	    JOptionPane.showMessageDialog(null, "Ingrese los valores para realizar la restar: ");
+	    n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 1: "));
+	    n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 2: "));
+	    mod = Math.floorMod(n1 ,n2);
+	    JOptionPane.showMessageDialog(null, "El resultado de la Division es: " + mod);
+    }
+
+
+
+
+
+
     public static void main(String[] args) {
         int opcion;
         
@@ -39,6 +73,7 @@ public class Menu {
                     "\n2.restar" +
                     "\n3.Multiplicar" +
                     "\n4.Dividir"+
+		    "\n5.Modulo"+
                     "\n12.Salir"+
                     "\n\nElija la opcion"));
             switch(opcion){
@@ -49,6 +84,18 @@ public class Menu {
 		case 2:
 		    JOptionPane.showMessageDialog(null, "Ingreso la opcion de restar");
 		    restar();
+		    break;
+		case 3:
+		    JOptionPane.showMessageDialog(null, "Ingreso a la opcion Multiplicar");
+		    multiplicar();
+		    break;
+		case 4:
+		    JOptionPane.showMessageDialog(null, "Ingreso la opcion de dividir");
+		    dividir();
+		    break;
+		case 5:
+		    JOptionPane.showMessageDialog(null, "Ingreso la opcion de modulo");
+		    modulo();
 		    break;
                     case 12:
                         break;
