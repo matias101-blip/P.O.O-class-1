@@ -22,7 +22,11 @@ public class Menu {
 
     public static void restar(){
 	    int n1, n2, result;
-	    JOption
+	    JOptionPane.showMessageDialog(null, "Ingrese los valores para realizar la restar: ");
+	    n1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 1: "));
+	    n2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el numero 2: "));
+	    result = n1 - n2;
+	    JOptionPane.showMessageDialog(null, "El resultado de la resta es: " + result);
     }
  
     
