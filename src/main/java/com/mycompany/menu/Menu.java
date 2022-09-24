@@ -19,9 +19,12 @@ public class Menu {
         result = n1 + n2;
         JOptionPane.showMessageDialog(null, "El resultado es: " + result);
     }
-    
-    
-    
+
+    public static void restar(){
+	    int n1, n2, result;
+	    JOption
+    }
+ 
     
     
     public static void main(String[] args) {
