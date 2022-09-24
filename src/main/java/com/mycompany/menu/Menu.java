@@ -46,6 +46,10 @@ public class Menu {
                     JOptionPane.showMessageDialog(null, "Ingreso a la opcion suma: ");
                     sumar();
                     break;
+		case 2:
+		    JOptionPane.showMessageDialog(null, "Ingreso la opcion de restar");
+		    restar();
+		    break;
                     case 12:
                         break;
                     default:
