@@ -31,7 +31,24 @@ public class Menu {
             opcion=Integer.parseInt(JOptionPane.showInputDialog("1.Sumar" +
                     "\n2.restar" +
                     "\n3.Multiplicar" +
-                    "\n4.Dividir"));
+                    "\n4.Dividir"+
+                    "\n12.Salir"+
+                    "\n\nElija la opcion"));
+            switch(opcion){
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Ingreso a la opcion suma: ");
+                    sumar();
+                    break;
+                    case 12:
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "Opcion no valida");
+                        
+                        
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Error");
         }
+        System.exit(0);
     }
 }
