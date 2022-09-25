@@ -25,6 +25,13 @@ public class Menu {
     
     
     public static void main(String[] args) {
+        int opcion;
         
+        try{
+            opcion=Integer.parseInt(JOptionPane.showInputDialog("1.Sumar" +
+                    "\n2.restar" +
+                    "\n3.Multiplicar" +
+                    "\n4.Dividir"));
+        }
     }
 }
